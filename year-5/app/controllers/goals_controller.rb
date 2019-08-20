@@ -1,5 +1,5 @@
 class GoalsController < ApplicationController
-    before_action :find_goal, only: [:show, :update, :destroy]
+    before_action: :find_goal, only: [:show, :update, :destroy]
 
     def index 
         @goals = Goal.all
@@ -35,7 +35,7 @@ class GoalsController < ApplicationController
     private
 
     def goals_params
-        params.require(:goal).permit(:title, :content, :dataset)
+        params.require(:goal).permit(:title, :content)
     end
 
     def find_goal
