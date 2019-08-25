@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Year 5</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <img id="logo" src="./images/year5logo.png">
+
+    <div id="headerBox"></div>
+
+    <h1></h1>
+
+    <div id="disablingDiv" ></div>
+
+    <div id="editDiv">
+        <div id="updateinput">
+            <p>Update your goal for this day:</p>
+            <form id="form2">
+            <input id="editInput">
+            <button class="updateBtn">Update</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="week">
+    
+    </div>
+    
+    <!-- user log in form -->
+    <!-- <div>
+        <form id="form">
+                Name:<br>
+                <input type="text" id="username"><br>
+                Img URL:<br>
+                <input type="text" id="url"><br>
+                <button id="submit" type="submit">Create User</button>
+        </form>
+    </div> -->
+
+    
+
+    <div id="setGoalform">
+            <h2 class="goalformday"></h2>
+                
+                    <p>Set a new goal for the day!</p>
+                <form id="form1">
+                    <input type="text" id="goalInput" autofocus/>
+                    <button id="submit" type="submit">Post</button>
+                </form>
+        </div>
+
+        <h2 id="goalsForToday">Goals for today:</h2>
+    <div id="buttonsDiv">
+        <button class="edit">Edit</button>
+        <button class="complete" >Complete</button>
+    </div>
+
+    <div id="goalslist">
+        
+        <div id="listGoals">
+            <ul class="goal-list">
+                
+            </ul>
+        </div>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
